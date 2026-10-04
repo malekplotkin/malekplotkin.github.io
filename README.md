@@ -128,7 +128,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
     </section>
 
  <section id="Writing">
-      <h2>Charts</h2>
+      <h2>Writing</h2>
       <ul class="list">
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
