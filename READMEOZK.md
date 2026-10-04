@@ -125,10 +125,10 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       </ul>
     </section>
 
-    <section id="Charts">
+ <section id="Charts">
       <h2>Charts</h2>
       <ul class="list">
-        <li><span class="when">Sep 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
+<iframe title="Ozaukee 2-Party President Margin" aria-label="Interactive line chart" id="datawrapper-chart-qQdJu" src="https://datawrapper.dwcdn.net/qQdJu/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="472" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}(); </script>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
       </ul>
     </section>
@@ -136,7 +136,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
 <section id="writing">
       <h2>Writing</h2>
       <ul class="list">
-        <li><span class="when">Sep 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
+        <iframe title="Ozaukee 2-Party President Margin" aria-label="Interactive line chart" id="datawrapper-chart-qQdJu" src="https://datawrapper.dwcdn.net/qQdJu/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="472" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}(); </script>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
       </ul>
     </section>
