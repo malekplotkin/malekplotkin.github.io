@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery – Your Name</title>
+<meta name="description" content="Photo gallery by Your Name.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #edeadf;
-  --ink: #000000;
-  --muted: #4a4a4a;
-  --line: #542900;
-  --accent: #542900;
-  --accent-ink: #ffffff;
+  --ink: #2a2016;
+  --muted: #62513b;
+  --line: #b8a37d;
+  --accent: #2f4a3a;
+  --accent-ink: #f1e7d3;
   --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --text: "Newsreader", Georgia, "Times New Roman", serif;
   box-sizing: border-box;
@@ -14,13 +24,13 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #101624; --ink: #e6ecf5; --muted: #98a5ba; --line: #2a3550;
-    --accent: #8ea6ff; --accent-ink: #101624;
+    --bg: #211a12; --ink: #ebddc3; --muted: #aa9a80; --line: #3d3224;
+    --accent: #b9cba0; --accent-ink: #211a12;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #101624; --ink: #e6ecf5; --muted: #98a5ba; --line: #2a3550;
-  --accent: #8ea6ff; --accent-ink: #101624;
+  --bg: #211a12; --ink: #ebddc3; --muted: #aa9a80; --line: #3d3224;
+  --accent: #b9cba0; --accent-ink: #211a12;
 }
 html { scroll-padding-top: env(safe-area-inset-top, 0px); }
 *, *::before, *::after { box-sizing: border-box; }
@@ -60,7 +70,6 @@ nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-family: var(--di
 main { padding-top: 1rem; }
 section { padding: 0 0 3.5rem; }
 h2 { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: -0.02em; margin: 0 0 1rem; }
-h3 { font-family: var(--display); font-weight: 800; font-size: 1.6rem; letter-spacing: -0.00em; margin: 0 0 0rem; }
 p { margin: 0 0 1rem; max-width: 62ch; }
 
 .list { list-style: none; margin: 0; padding: 0; }
@@ -83,6 +92,30 @@ p { margin: 0 0 1rem; max-width: 62ch; }
 .button:hover { color: var(--accent-ink); filter: brightness(1.1); }
 footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
 
+h1 a { color: inherit; text-decoration: none; }
+h1 a:hover { color: var(--accent); }
+nav a[aria-current="page"] { color: var(--accent); }
+
+.carousel { margin-top: 1.5rem; }
+.track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: 6px; border: 1px solid var(--line); }
+.track::-webkit-scrollbar { display: none; }
+.track:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.slide { flex: 0 0 100%; scroll-snap-align: center; margin: 0; }
+.slide img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; }
+.arrows { display: flex; gap: 0.5rem; }
+.arrows button {
+  font: 800 1.1rem var(--display); width: 2.75rem; height: 2.75rem; border-radius: 50%;
+  border: 1.5px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer;
+}
+.arrows button:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.arrows button:focus-visible, .dots button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.dots { display: flex; gap: 0.5rem; }
+.dots button { width: 0.75rem; height: 0.75rem; padding: 0; border-radius: 50%; border: 1.5px solid var(--ink); background: transparent; cursor: pointer; }
+.dots button[aria-current="true"] { background: var(--ink); }
+#caption { margin: 1rem 0 0; color: var(--muted); min-height: 1.65em; }
+@media (prefers-reduced-motion: no-preference) { .track { scroll-behavior: smooth; } }
+
 @media (max-width: 52rem) {
   .wrap { grid-template-columns: 1fr; gap: 1.5rem; }
   header { position: static; }
@@ -93,66 +126,88 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
   @keyframes rise { from { opacity: 0; transform: translateY(0.6em); } to { opacity: 1; transform: none; } }
 }
 </style>
+</head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Malek Plotkin</h1>
-    <p class="tagline">[studying history @ boston university]</p>
+    <h1><a href="index.html">Your Name</a></h1>
+    <p class="tagline">[One sentence on what you do and who it's for.]</p>
     <nav aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#writing">Writing</a>
-      <a href="#charts">Charts</a>
-  <a href="https://feraldgord.substack.com/">Substack</a>
-      <a href="#contact">Contact</a>
-  
-
-
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#writing">Writing</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>[Two or three sentences introducing yourself: where you're based, what you've been working on, and what you care about.]</p>
-      <p>[One more sentence about what you're looking for or what you do outside of work.]</p>
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>[A line about what these images show.]</p>
+      <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Photo gallery">
+        <div class="track" id="track" tabindex="0"></div>
+        <div class="controls">
+          <div class="arrows">
+            <button type="button" id="prev" aria-label="Previous image">&larr;</button>
+            <button type="button" id="next" aria-label="Next image">&rarr;</button>
+          </div>
+          <div class="dots" id="dots"></div>
+        </div>
+        <p id="caption" aria-live="polite"></p>
+      </div>
     </section>
 
-    <section id="work">
-      <h2>Selected work</h2>
-      <ul class="list">
-        <li><span class="when">2026</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
-        <li><span class="when">2025</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
-        <li><span class="when">2024</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
-      </ul>
-    </section>
-
- <section id="Writing">
-      <h2>Writing</h2>
-      <ul class="list">
-        <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
-        <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
-      </ul>
-    </section>
-
-<section id="Charts">
-      <h2>Charts and Maps</h2>
-      <ul class="list">
-        <iframe title="Ozaukee 2-Party President Margin" aria-label="Interactive line chart" id="datawrapper-chart-qQdJu" src="https://datawrapper.dwcdn.net/qQdJu/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="472" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}(); </script>
-<div style="min-height:491px" id="datawrapper-vis-yQwFM"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/yQwFM/embed.js" charset="utf-8" data-target="#datawrapper-vis-yQwFM"></script><noscript><img src="https://datawrapper.dwcdn.net/yQwFM/full.png" alt="" /></noscript></div>      </ul>
-<li><span class="when">Sept 6, 2026</span><div><strong><a href="https://x.com/ferald_gord/status/2096700836696977748/photo/1">2026 Norf-Suff District – Democratic Primary Precinct Map.</a></strong><span><br>A precinct map of September 1st Democratic primary for the Norfolk and Suffolk District in the Massachusetts State Senate. 
-<img src="https://i.imgur.com/0l22N7u.png">
-</span></div></li>    
-</section>
-    
-    <section id="contact">
-      <h3>Contact</h3>
-            <p>malekplotkin at gmail dot com.</p>
-      <p><a href="#">GitHub</a> &nbsp; <a href="#">LinkedIn</a> &nbsp; <a href="https://x.com/ferald_gord">Twitter (X)</a></p>
-    </section>
-
-    <footer>&copy; Malek Plotkin</footer>
+    <footer>&copy; 2026 Your Name</footer>
   </main>
 </div>
+<script>
+// Replace each src with your own image path (e.g. "photos/one.jpg") and edit the captions.
+var PHOTOS = [
+  { caption: "Caption for the first image.",  bg: "#c9b48c", fg: "#2a2016" },
+  { caption: "Caption for the second image.", bg: "#2f4a3a", fg: "#f1e7d3" },
+  { caption: "Caption for the third image.",  bg: "#8a7656", fg: "#f1e7d3" },
+  { caption: "Caption for the fourth image.", bg: "#a9b79a", fg: "#2a2016" }
+];
+function placeholder(n, bg, fg) {
+  var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="' + bg + '"/><text x="600" y="420" font-family="Arial, sans-serif" font-size="56" text-anchor="middle" fill="' + fg + '">Image ' + n + '</text></svg>';
+  return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+}
+var track = document.getElementById("track"), dots = document.getElementById("dots"), caption = document.getElementById("caption");
+PHOTOS.forEach(function (p, i) {
+  var fig = document.createElement("figure"); fig.className = "slide";
+  var img = document.createElement("img");
+  img.src = placeholder(i + 1, p.bg, p.fg); img.alt = p.caption;
+  fig.appendChild(img); track.appendChild(fig);
+  var d = document.createElement("button"); d.type = "button";
+  d.setAttribute("aria-label", "Go to image " + (i + 1));
+  d.addEventListener("click", function () { goTo(i); });
+  dots.appendChild(d);
+});
+var current = 0;
+function goTo(i) {
+  var n = PHOTOS.length; i = (i + n) % n;
+  track.scrollTo({ left: i * track.clientWidth });
+}
+function update() {
+  var i = Math.round(track.scrollLeft / track.clientWidth) || 0;
+  current = Math.max(0, Math.min(PHOTOS.length - 1, i));
+  caption.textContent = PHOTOS[current].caption;
+  Array.prototype.forEach.call(dots.children, function (d, k) { d.setAttribute("aria-current", k === current ? "true" : "false"); });
+}
+var ticking = false;
+track.addEventListener("scroll", function () {
+  if (!ticking) { ticking = true; requestAnimationFrame(function () { update(); ticking = false; }); }
+});
+document.getElementById("prev").addEventListener("click", function () { goTo(current - 1); });
+document.getElementById("next").addEventListener("click", function () { goTo(current + 1); });
+track.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") { e.preventDefault(); goTo(current - 1); }
+  if (e.key === "ArrowRight") { e.preventDefault(); goTo(current + 1); }
+});
+window.addEventListener("resize", function () { track.scrollTo({ left: current * track.clientWidth, behavior: "instant" }); });
+update();
+
+</script>
 </body>
 </html>
