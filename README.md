@@ -2,7 +2,8 @@
 <div class="wrap">
   <header>
     <h1>Malek Plotkin</h1>
-    <p class="tagline">[studying history @ boston university]</p>
+    <p class="tagline">[studying history</p>
+  <p>@ boston university]</p>
     <nav aria-label="Sections">
       <a href="#about">About</a>
       <a href="#work">Work</a>
