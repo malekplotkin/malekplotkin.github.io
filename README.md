@@ -1,6 +1,6 @@
 <style>
 :root {
-  --bg: #edeadf;
+  --bg: #ffffff
   --ink: #000000;
   --muted: #4a4a4a;
   --line: #542900;
