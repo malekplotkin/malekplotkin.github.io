@@ -93,7 +93,6 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
   @keyframes rise { from { opacity: 0; transform: translateY(0.6em); } to { opacity: 1; transform: none; } }
 }
 </style>
-</head>
 <body>
 <div class="wrap">
   <header>
