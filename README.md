@@ -1,18 +1,12 @@
-<html lang="en-US">
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      
-      
-
-      
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Your Name</title>
 <meta name="description" content="Personal website of Your Name.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
 :root {
   --bg: #edeadf;
@@ -108,8 +102,8 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
   @keyframes rise { from { opacity: 0; transform: translateY(0.6em); } to { opacity: 1; transform: none; } }
 }
 </style>
-
-
+</head>
+<body>
 <div class="wrap">
   <header>
     <h1>Malek Plotkin</h1>
@@ -125,13 +119,13 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
 
   <main>
     <section id="about">
-      <h2 id="about-1">About<a class="anchorjs-link " href="#about-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <h2>About</h2>
       <p>Hello</p>
       <p>[One more sentence about what you're looking for or what you do outside of work.]</p>
     </section>
 
     <section id="work">
-      <h2 id="selected-work">Selected work<a class="anchorjs-link " href="#selected-work" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <h2>Selected work</h2>
       <ul class="list">
         <li><span class="when">2026</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
         <li><span class="when">2025</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
@@ -140,7 +134,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
     </section>
 
     <section id="writing">
-      <h2 id="writing-1">Writing<a class="anchorjs-link " href="#writing-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+      <h2>Writing</h2>
       <ul class="list">
         <li><span class="when">Sep 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
@@ -148,22 +142,13 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
     </section>
 
     <section id="contact">
-      <h3 id="contact-1">Contact<a class="anchorjs-link " href="#contact-1" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+      <h3>Contact</h3>
             <p>malekplotkin at gmail dot com.</p>
       <p><a href="#">GitHub</a> &nbsp; <a href="#">LinkedIn</a> &nbsp; <a href="https://x.com/ferald_gord">Twitter (X)</a></p>
     </section>
 
-    <footer>© Malek Plotkin</footer>
+    <footer>&copy; Malek Plotkin</footer>
   </main>
 </div>
-
-
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  
-
-</body></html>
+</body>
+</html>
