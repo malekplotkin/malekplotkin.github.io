@@ -6,6 +6,7 @@
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#writing">Writing</a>
+      <a href="#[writing](https://feraldgord.substack.com/)">Substack</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
