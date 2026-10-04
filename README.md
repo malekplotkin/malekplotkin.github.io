@@ -110,7 +110,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>Hello</p>
+      <p>[Two or three sentences introducing yourself: where you're based, what you've been working on, and what you care about.]</p>
       <p>[One more sentence about what you're looking for or what you do outside of work.]</p>
     </section>
 
