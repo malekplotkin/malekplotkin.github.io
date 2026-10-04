@@ -104,6 +104,8 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       <a href="#writing">Writing</a>
       <a href="https://feraldgord.substack.com/">Substack</a>
       <a href="#contact">Contact</a>
+      <a href="#charts">Charts</a>
+
     </nav>
   </header>
 
@@ -123,14 +125,22 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       </ul>
     </section>
 
-    <section id="writing">
-      <h2>Writing</h2>
+    <section id="Charts">
+      <h2>Charts</h2>
       <ul class="list">
         <li><span class="when">Sep 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
       </ul>
     </section>
 
+<section id="writing">
+      <h2>Writing</h2>
+      <ul class="list">
+        <li><span class="when">Sep 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
+        <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
+      </ul>
+    </section>
+    
     <section id="contact">
       <h3>Contact</h3>
             <p>malekplotkin at gmail dot com.</p>
