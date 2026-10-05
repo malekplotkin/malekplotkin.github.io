@@ -102,7 +102,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#writing">Writing</a>
-      <a href="#charts">Charts</a>
+      <a href="#Graphs">Graphs and Maps</a>
   <a href="https://feraldgord.substack.com/">Substack</a>
       <a href="#contact">Contact</a>
   
@@ -135,8 +135,8 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       </ul>
     </section>
 
-<section id="Charts">
-      <h2>Charts and Maps</h2>
+<section id="Graphs">
+      <h2>Graphs and Maps</h2>
       <ul class="list">
         <iframe title="Ozaukee 2-Party President Margin" aria-label="Interactive line chart" id="datawrapper-chart-qQdJu" src="https://datawrapper.dwcdn.net/qQdJu/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="472" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}(); </script>
 <div style="min-height:491px" id="datawrapper-vis-yQwFM"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/yQwFM/embed.js" charset="utf-8" data-target="#datawrapper-vis-yQwFM"></script><noscript><img src="https://datawrapper.dwcdn.net/yQwFM/full.png" alt="" /></noscript></div>      </ul>
