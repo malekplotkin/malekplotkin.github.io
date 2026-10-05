@@ -131,7 +131,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
  <section id="Writing">
       <h2>Writing</h2>
       <ul class="list">
-        <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
+        <li><span class="when">Spring 2026</span><div><strong><a href="https://buplr.org/articles/2026/4/21/iy1bat3o45l2azl8yezvg144adhdao">Lost Clause Mentality: The Debate Over The Privileges or Immunities Clause</a></strong><span>For the BU Pre-Law Review, I wrote a summary of the debate around the privileges or immunities clause.</span></div></li>
         <li><span class="when">May 2026</span><div><strong><a href="#">Post or article title</a></strong><span>A short description of the piece.</span></div></li>
       </ul>
     </section>
