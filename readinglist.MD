@@ -23,8 +23,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #211a12; --ink: #ebddc3; --muted: #aa9a80; --line: #3d3224;
-    --accent: #b9cba0; --accent-ink: #211a12;
+    --bg: #101624; --ink: #e6ecf5; --muted: #98a5ba; --line: #2a3550;
+  --accent: #8ea6ff; --accent-ink: #101624;
   }
 }
 :root[data-theme="dark"] {
@@ -167,4 +167,3 @@ nav a[aria-current="page"] { color: var(--accent); }
 
     <footer>&copy; 2026 Malek Plotkin</footer>
   </main>
-</html>
