@@ -138,6 +138,8 @@ nav a[aria-current="page"] { color: var(--accent); }
       <h2>Books</h2>
       <ul class="reads">
         <li><strong><a href="https://bookshop.org/p/books/abundance-derek-thompson/28c86c47a61a8296">Abundance, Ezra Klein & Derek Thompson</a></strong><span>The book that spawned a million tweets. I don't agree with <i>all</i> of its conclusions, but it makes strong points about the importance of government actually doing things.</span></li>
+        <li><strong><a href="https://bookshop.org/p/books/strangers-a-memoir-of-marriage-belle-burden/9576dba8b9d3ce7d">Strangers, Belle Burden</a></strong><span>A deeply moving work about trust, marriage, and society writ-large. I strongly believe that everyone should read this book before they get married.</span></li>
+        <li><strong><a href="https://bookshop.org/p/books/we-tell-ourselves-stories-in-order-to-live-collected-nonfiction-introduction-by-john-leonard-joan-didion/c586527da9e45a15?ean=9780307264879">We Tell Ourselves Stories in Order to Live, Joan Didion</a></strong><span>Joan Didion is far and away one of my favorite writers. I am simply enraptured by every sentence she writes. This is my favorite collection of her non-fiction works.</span></li>
         <li><strong><a href="#">Book title, Author</a></strong><span>A line on why it stuck with you.</span></li>
         <li><strong><a href="#">Book title, Author</a></strong><span>A line on why it stuck with you.</span></li>
       </ul>
