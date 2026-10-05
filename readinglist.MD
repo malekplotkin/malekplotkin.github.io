@@ -117,7 +117,7 @@ nav a[aria-current="page"] { color: var(--accent); }
       <h2>Reading</h2>
       <p>Obviously I might not endorse <i>every</i> position taken by these writers and organizations, but I generally find them to sources of good analysis and commentary.</p>
       <p class="jump">
-        <a href="#think-tanks">Think Tanks</a>
+        <a href="#think-tanks">Think Tanks, et all</a>
         <a href="#books">Books</a>
         <a href="#magazines-newspapers">Magazines/Newspapers</a>
         <a href="#people">People</a>
@@ -128,8 +128,10 @@ nav a[aria-current="page"] { color: var(--accent); }
       <h2>Think Tanks</h2>
       <ul class="reads">
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
+        <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
+        <li><strong><a href="https://www.anthropic.com/research/team/alignment">Anthropic Alignment Research</a></strong><span>Anthropic's alignment research team. Obviously on the cutting edge of AI alignment research. They also have a <a href="https://alignment.anthropic.com/">blog</a>!</span></li>
 <li><strong><a href="https://www.niskanencenter.org/">Niskanen Center</a></strong><span>Why you read them and what they cover.</span></li>
-        <li><strong><a href="https://www.brookings.edu/">Brookings Institute</a></strong><span>Why you read them and what they cover.</span></li>
+        <li><strong><a href="https://www.brookings.edu/">Brookings Institute</a></strong><span>Why you read them and what they cover.</span </li>
         <li><strong><a href="https://www.crfb.org/">Committee for a Responsible Federal Budget</a></strong><span>A great sources for all baby deficit hawks out there. While I'm not totally onboard with everything they say, they are probably one of the best think tanks on budget issues.</span></li>
       </ul>
     </section>
