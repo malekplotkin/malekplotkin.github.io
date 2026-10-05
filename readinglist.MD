@@ -131,7 +131,7 @@ nav a[aria-current="page"] { color: var(--accent); }
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
         <li><strong><a href="https://www.anthropic.com/research/team/alignment">Anthropic Alignment Research</a></strong><span>Anthropic's alignment research team. Obviously on the cutting edge of AI alignment research. They also have a <a href="https://alignment.anthropic.com/">blog</a>!</span></li>
 <li><strong><a href="https://www.niskanencenter.org/">Niskanen Center</a></strong><span>Why you read them and what they cover.</span></li>
-        <li><strong><a href="https://www.brookings.edu/">Brookings Institute</a></strong><span>Why you read them and what they cover.</span </li>
+        <li><strong><a href="https://www.brookings.edu/">Brookings Institute</a></strong><span><i>The</i> premier center-left think tank. So well established that the Nixon WH once considered <a href="https://www.washingtonpost.com/archive/politics/2003/02/18/nixon-aide-wanted-think-tank-bombed-watergate-figure-says/12e454ea-951c-47df-9980-5e87e583aedb/">firebombing</a> them.</span </li>
         <li><strong><a href="https://www.crfb.org/">Committee for a Responsible Federal Budget</a></strong><span>A great sources for all baby deficit hawks out there. While I'm not totally onboard with everything they say, they are probably one of the best think tanks on budget issues.</span></li>
       </ul>
     </section>
