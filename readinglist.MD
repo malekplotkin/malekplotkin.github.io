@@ -9,12 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #edeadf;
-  --ink: #2a2016;
-  --muted: #62513b;
-  --line: #b8a37d;
-  --accent: #2f4a3a;
-  --accent-ink: #f1e7d3;
+  --bg: #ffffff
+  --ink: #000000;
+  --muted: #4a4a4a;
+  --line: #542900;
+  --accent: #542900;
+  --accent-ink: #ffffff;
   --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --text: "Newsreader", Georgia, "Times New Roman", serif;
   box-sizing: border-box;
@@ -115,7 +115,7 @@ nav a[aria-current="page"] { color: var(--accent); }
   <main>
     <section id="reading">
       <h2>Reading</h2>
-      <p>[A line or two about what you read and why. Swap the placeholders below for your own picks.]</p>
+      <p>Obviously I might not endorse <i>every</i> position taken by these writers and organizations, but I generally find them to sources of good analysis and commentary.</p>
       <p class="jump">
         <a href="#think-tanks">Think Tanks</a>
         <a href="#books">Books</a>
@@ -128,7 +128,8 @@ nav a[aria-current="page"] { color: var(--accent); }
       <h2>Think Tanks</h2>
       <ul class="reads">
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
-        <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
+<li><strong><a href="https://www.niskanencenter.org/">Niskanen Center</a></strong><span>Why you read them and what they cover.</span></li>
+        <li><strong><a href="https://www.brookings.edu/">Brookings Institute</a></strong><span>Why you read them and what they cover.</span></li>
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
       </ul>
     </section>
