@@ -1,5 +1,3 @@
-title: gallery
-<!DOCTYPE html>
 <html lang="en">
 <style>
 :root {
@@ -119,21 +117,6 @@ nav a[aria-current="page"] { color: var(--accent); }
   @keyframes rise { from { opacity: 0; transform: translateY(0.6em); } to { opacity: 1; transform: none; } }
 }
 </style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <h1><a href="index.html">Your Name</a></h1>
-    <p class="tagline">[One sentence on what you do and who it's for.]</p>
-    <nav aria-label="Sections">
-      <a href="index.html#about">About</a>
-      <a href="index.html#work">Work</a>
-      <a href="index.html#writing">Writing</a>
-      <a href="index.html#contact">Contact</a>
-      <a href="gallery.html" aria-current="page">Gallery</a>
-    </nav>
-  </header>
-
   <main>
     <section id="gallery">
       <h2>Gallery</h2>
