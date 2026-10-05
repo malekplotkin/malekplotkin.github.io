@@ -115,7 +115,7 @@ nav a[aria-current="page"] { color: var(--accent); }
   <main>
     <section id="reading">
       <h2>Reading</h2>
-      <p>Obviously I might not endorse <i>every</i> position taken by these writers and organizations, but I generally find them to sources of good analysis and commentary.</p>
+      <p>Obviously I might not endorse <i>every</i> position taken by these writers and organizations, but I generally find them to sources of good analysis and commentary. Listed in no particular order. </p>
       <p class="jump">
         <a href="#think-tanks">Think Tanks, et all</a>
         <a href="#books">Books</a>
