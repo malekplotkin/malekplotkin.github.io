@@ -103,7 +103,8 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       <a href="#work">Work</a>
       <a href="#writing">Writing</a>
       <a href="#Graphs">Graphs and Maps</a>
-  <a href="https://feraldgord.substack.com/">Substack</a>
+  <a href="https://malekplotkin.github.io/readinglist">Reading List</a>
+      <a href="https://feraldgord.substack.com/">Substack</a>
       <a href="#contact">Contact</a>
   
 
