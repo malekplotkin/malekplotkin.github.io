@@ -165,8 +165,6 @@ nav a[aria-current="page"] { color: var(--accent); }
       </ul>
     </section>
 
-    <footer>&copy; 2026 Your Name</footer>
+    <footer>&copy; 2026 Malek Plotkin</footer>
   </main>
-</div>
-</body>
 </html>
