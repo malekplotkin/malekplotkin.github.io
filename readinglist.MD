@@ -148,7 +148,7 @@ nav a[aria-current="page"] { color: var(--accent); }
     </section>
 
     <section id="magazines-newspapers">
-      <h2>Magazines/Newspapers</h2>
+      <h2>Magazines & Newspapers</h2>
       <ul class="reads">
         <li><strong><a href="#">Publication name</a></strong><span>What you turn to it for.</span></li>
         <li><strong><a href="#">Publication name</a></strong><span>What you turn to it for.</span></li>
