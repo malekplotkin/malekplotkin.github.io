@@ -117,7 +117,7 @@ nav a[aria-current="page"] { color: var(--accent); }
       <h2>Reading</h2>
       <p>Obviously I might not endorse <i>every</i> position taken by these writers and organizations, but I generally find them to sources of good analysis and commentary. Listed in no particular order. </p>
       <p class="jump">
-        <a href="#think-tanks">Think Tanks, et all</a>
+        <a href="#think-tanks">Think Tanks, et al</a>
         <a href="#books">Books</a>
         <a href="#magazines-newspapers">Magazines/Newspapers</a>
         <a href="#people">People</a>
@@ -125,7 +125,7 @@ nav a[aria-current="page"] { color: var(--accent); }
     </section>
 
     <section id="think-tanks">
-      <h2>Think Tanks</h2>
+      <h2>Think Tanks, et al</h2>
       <ul class="reads">
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
         <li><strong><a href="#">Think tank name</a></strong><span>Why you read them and what they cover.</span></li>
