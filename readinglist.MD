@@ -137,7 +137,7 @@ nav a[aria-current="page"] { color: var(--accent); }
     <section id="books">
       <h2>Books</h2>
       <ul class="reads">
-        <li><strong><a href="#">Book title, Author</a></strong><span>A line on why it stuck with you.</span></li>
+        <li><strong><a href="https://bookshop.org/p/books/abundance-derek-thompson/28c86c47a61a8296">Abundance, Ezra Klein & Derek Thompson</a></strong><span>The book that spawned a million tweets. I don't agree with <i>all</i> of its conclusions, but it makes strong points about the importance of government actually doing things.</span></li>
         <li><strong><a href="#">Book title, Author</a></strong><span>A line on why it stuck with you.</span></li>
         <li><strong><a href="#">Book title, Author</a></strong><span>A line on why it stuck with you.</span></li>
       </ul>
