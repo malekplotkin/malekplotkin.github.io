@@ -83,7 +83,6 @@ Colorado Springs,CO,38.83,-104.82
 Raleigh,NC,35.78,-78.64
 Miami,FL,25.76,-80.19
 Virginia Beach,VA,36.85,-75.98
-Oakland,CA,37.80,-122.27
 Minneapolis,MN,44.98,-93.27
 Tulsa,OK,36.15,-95.99
 Tampa,FL,27.95,-82.46
@@ -114,29 +113,32 @@ Charleston,SC,32.78,-79.93
 Knoxville,TN,35.96,-83.92
 Little Rock,AR,34.75,-92.29
 Jackson,MS,32.30,-90.18
-Fargo,ND,46.88,-96.79
-Sioux Falls,SD,43.55,-96.73
-Lincoln,NE,40.81,-96.70
-Salem,OR,44.94,-123.04
 Mobile,AL,30.69,-88.04
 Huntsville,AL,34.73,-86.59
 Chattanooga,TN,35.05,-85.31
 Hartford,CT,41.76,-72.67
-Lubbock,TX,33.58,-101.86
 Corpus Christi,TX,27.80,-97.40
 Tacoma,WA,47.25,-122.44
 Norfolk,VA,36.85,-76.29
-Akron,OH,41.08,-81.52
 Durham,NC,35.99,-78.90
 Grand Rapids,MI,42.96,-85.67
-Springfield,MO,37.21,-93.29
 Bakersfield,CA,35.37,-119.02
 Stockton,CA,37.96,-121.29
 Long Beach,CA,33.77,-118.19
 Newark,NJ,40.74,-74.17
-Jersey City,NJ,40.73,-74.06
 St. Petersburg,FL,27.77,-82.64
-Fort Wayne,IN,41.08,-85.14`;
+Cambridge,MA,42.37,-71.11
+San Juan,PR,18.47,-66.11
+Boulder,CO,40.01,-105.27
+Ann Arbor,MI,42.28,-83.74
+Wilmington,NC,34.23,-77.94
+New Haven,CT,41.31,-72.92
+Irvine,CA,33.68,-117.83
+Albany,NY,42.65,-73.75
+Asheville,NC,35.60,-82.55
+Columbus,GA,32.46,-84.99
+Augusta,GA,33.47,-81.97
+Carlsbad,CA,33.16,-117.35`;
 const C=DATA.split("\n").map(l=>{const[n,s,a,o]=l.split(",");return{n,s,lat:+a,lon:+o}});
 const TOTAL=10, $=id=>document.getElementById(id);
 const norm=s=>s.toLowerCase().replace(/\./g,"").replace(/\bsaint\b/,"st").trim();
