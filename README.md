@@ -115,8 +115,9 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>[Two or three sentences introducing yourself: where you're based, what you've been working on, and what you care about.]</p>
-      <p>[One more sentence about what you're looking for or what you do outside of work.]</p>
+      <p>Hi, I'm Malek! I'm currently a Junior at Boston University where I study History on a pre-law track. </p>
+      <p>Outside of history, I'm really interested in AI—especially the legal and philosophic questions posed by it—as well as alignment science. I also do a lot of personal research involving redistricting, historic voting, and general election data!</p>
+      <p>Outside of academic work, I really enjoy reading (please send me book recommendations), hiking, the Boston Red Sox!</p>
     </section>
 
     <section id="work">
