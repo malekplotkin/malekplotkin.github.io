@@ -7,10 +7,10 @@
 <style>
 :root{--bg:#fff;--panel:#000;--text:#f2f2f2;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:12px}
-header{display:flex;justify-content:space-between;align-items:center;width:min(96vw,1400px);padding:4px 4px 10px;font-size:15px}
+body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:12px;--s:min(94vw,calc(100vh - 230px))}
+header{display:flex;justify-content:space-between;align-items:center;width:var(--s);padding:4px 4px 10px;font-size:15px}
 header b{font-size:17px}
-#wrap{width:min(96vw,1400px);background:#000;border-radius:12px;overflow:hidden}#map{height:68vh;min-height:300px;background:#000}
+#wrap{width:var(--s);background:#000;border-radius:12px;overflow:hidden}#map{width:var(--s);height:var(--s);background:#000}
 #panel{background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:10px}
 #msg{min-height:22px;color:var(--muted)}
 #msg.good{color:var(--good)}#msg.bad{color:var(--bad)}
