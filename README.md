@@ -117,7 +117,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
       <h2>About</h2>
       <p>Hi, I'm Malek! I'm currently a Junior at Boston University where I study History on a pre-law track. </p>
       <p>Outside of history, I'm really interested in AI—especially the legal and philosophic questions posed by it—as well as alignment science. I also do a lot of personal research involving redistricting, historic voting, and general election data!</p>
-      <p>Outside of academic work, I really enjoy reading (please send me book recommendations), hiking, the Boston Red Sox!</p>
+      <p>Outside of academic work, I really enjoy reading (please send me book recommendations), hiking, and the Boston Red Sox!</p>
     </section>
 
     <section id="work">
