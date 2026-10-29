@@ -19,7 +19,7 @@ input{flex:1;padding:11px;border-radius:8px;border:1px solid #2c3948;background:
 button{padding:11px 16px;border:0;border-radius:8px;background:var(--accent);color:#06121f;font-weight:600;font-size:15px;cursor:pointer}
 button.alt{background:#2c3948;color:var(--text)}
 #end{display:none;text-align:center;padding:8px}
-#end h2{margin:4px 0}
+#end h2{margin:4px 0;color:#fff}
 </style>
 </head>
 <body>
