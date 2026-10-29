@@ -5,12 +5,12 @@
 <title>Satellite City Guesser</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <style>
-:root{--bg:#ffffff;--panel:#18202b;--text:#e8edf3;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
+:root{--bg:#fff;--panel:#000;--text:#f2f2f2;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;height:100vh}
-header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--panel);font-size:15px}
+body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:12px}
+header{display:flex;justify-content:space-between;align-items:center;width:min(96vw,1400px);padding:4px 4px 10px;font-size:15px}
 header b{font-size:17px}
-#map{flex:1;min-height:200px;background:#000}
+#wrap{width:min(96vw,1400px);background:#000;border-radius:12px;overflow:hidden}#map{height:68vh;min-height:300px;background:#000}
 #panel{background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:10px}
 #msg{min-height:22px;color:var(--muted)}
 #msg.good{color:var(--good)}#msg.bad{color:var(--bad)}
@@ -24,6 +24,7 @@ button.alt{background:#2c3948;color:var(--text)}
 </head>
 <body>
 <header><b>Satellite City Guesser</b><span id="stat"></span></header>
+<div id="wrap">
 <div id="map"></div>
 <div id="panel">
   <div id="msg"></div>
@@ -35,6 +36,7 @@ button.alt{background:#2c3948;color:var(--text)}
   </div>
   <div class="row" id="nextRow" style="display:none"><button id="next" style="flex:1">Next city</button></div>
   <div id="end"><h2 id="final"></h2><button id="again">Play again</button></div>
+</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
@@ -140,10 +142,12 @@ const TOTAL=10, $=id=>document.getElementById(id);
 const norm=s=>s.toLowerCase().replace(/\./g,"").replace(/\bsaint\b/,"st").trim();
 $("cities").innerHTML=C.map(c=>`<option value="${c.n}, ${c.s}">`).join("");
 
-const map=L.map("map",{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false});
+const map=L.map("map",{zoomControl:false,dragging:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,touchZoom:false,zoomSnap:0});
 L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:17,attribution:"Imagery © Esri"}).addTo(map);
 
-let order,round,score,cur,tries,done,center;
+let order,round,score,cur,tries,done,center,off=0;
+function view(){map.invalidateSize();map.setView(center,11+Math.log2(map.getSize().x/1000)+off,{animate:false})}
+addEventListener("resize",()=>{if(center)view()});
 function start(){
   order=[...C].sort(()=>Math.random()-.5).slice(0,TOTAL);round=0;score=0;
   $("end").style.display="none";nextRound();
@@ -159,21 +163,21 @@ function nextRound(){
   cur=order[round++];tries=0;done=false;
   const j=()=>(Math.random()-.5)*.08;
   center=[cur.lat+j(),cur.lon+j()];
-  map.setView(center,11,{animate:false});
+  off=0;view();
   $("inp").value="";$("guessRow").style.display="flex";$("nextRow").style.display="none";
   setMsg("Worth 3 points. Wrong guesses reveal hints and lower the score.");
   stat();$("inp").focus();
 }
 function reveal(pts,won){
   done=true;score+=pts;stat();
-  map.setView(center,11,{animate:false});
+  off=0;view();
   setMsg(won?`Correct! It's ${cur.n}, ${cur.s}. +${pts}`:`It was ${cur.n}, ${cur.s}.`,won?"good":"bad");
   $("guessRow").style.display="none";$("nextRow").style.display="flex";
   $("next").textContent=round>=TOTAL?"See results":"Next city";
 }
 function wrong(){
   tries++;
-  if(tries===1){map.setView(center,9,{animate:false});setMsg("Not quite. Zoomed out for you. 2 points left.","bad")}
+  if(tries===1){off=-2;view();setMsg("Not quite. Zoomed out for you. 2 points left.","bad")}
   else if(tries===2){setMsg(`Not quite. Hint: it's in ${cur.s}. 1 point left.`,"bad")}
   else reveal(0,false);
 }
