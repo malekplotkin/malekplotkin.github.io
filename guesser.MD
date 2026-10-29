@@ -129,7 +129,6 @@ Newark,NJ,40.74,-74.17
 St. Petersburg,FL,27.77,-82.64
 San Juan,PR,18.47,-66.11
 Boulder,CO,40.01,-105.27
-Ann Arbor,MI,42.28,-83.74
 Wilmington,NC,34.23,-77.94
 New Haven,CT,41.31,-72.92
 Irvine,CA,33.68,-117.83
@@ -147,7 +146,7 @@ const map=L.map("map",{zoomControl:false,dragging:false,scrollWheelZoom:false,do
 L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:17,attribution:"Imagery © Esri"}).addTo(map);
 
 let order,round,score,cur,tries,done,center,off=0;
-function view(){map.invalidateSize();map.setView(center,11+Math.log2(map.getSize().x/1000)+off,{animate:false})}
+function view(){map.invalidateSize();map.setView(center,11.5+Math.log2(map.getSize().x/1000)+off,{animate:false})}
 addEventListener("resize",()=>{if(center)view()});
 function start(){
   order=[...C].sort(()=>Math.random()-.5).slice(0,TOTAL);round=0;score=0;
@@ -178,7 +177,7 @@ function reveal(pts,won){
 }
 function wrong(){
   tries++;
-  if(tries===1){off=-2;view();setMsg("Not quite. Zoomed out for you. 2 points left.","bad")}
+  if(tries===1){off=-2.5;view();setMsg("Not quite. Zoomed out for you. 2 points left.","bad")}
   else if(tries===2){setMsg(`Not quite. Hint: it's in ${cur.s}. 1 point left.`,"bad")}
   else reveal(0,false);
 }
