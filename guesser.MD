@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Satellite City Guesser</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <style>
 :root{--bg:#10151c;--panel:#18202b;--text:#e8edf3;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
 *{box-sizing:border-box}
