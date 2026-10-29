@@ -127,7 +127,6 @@ Stockton,CA,37.96,-121.29
 Long Beach,CA,33.77,-118.19
 Newark,NJ,40.74,-74.17
 St. Petersburg,FL,27.77,-82.64
-Cambridge,MA,42.37,-71.11
 San Juan,PR,18.47,-66.11
 Boulder,CO,40.01,-105.27
 Ann Arbor,MI,42.28,-83.74
