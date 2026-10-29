@@ -122,7 +122,7 @@ footer { color: var(--muted); font-size: 0.95rem; padding-top: 1rem; }
     <section id="work">
       <h2>Selected work</h2>
       <ul class="list">
-        <li><span class="when">2026</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
+        <li><span class="when">2026</span><div><strong><a href="https://malekplotkin.github.io/guesser">US City Satellite Image Game</a></strong><span>I really enjoy guessing US cities by their satellite images, and wasn't really able to find a good game for it. So I used Claude to make one!</span></div></li>
         <li><span class="when">2025</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
         <li><span class="when">2024</span><div><strong><a href="#">Project title</a></strong><span>One line on what it is and what you did.</span></div></li>
       </ul>
