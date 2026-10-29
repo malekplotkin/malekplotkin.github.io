@@ -5,7 +5,7 @@
 <title>Satellite City Guesser</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
 <style>
-:root{--bg:#10151c;--panel:#18202b;--text:#e8edf3;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
+:root{--bg:#ffffff;--panel:#18202b;--text:#e8edf3;--muted:#8d9bab;--accent:#4ea1ff;--good:#3ecf8e;--bad:#ff6b6b}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;height:100vh}
 header{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:var(--panel);font-size:15px}
